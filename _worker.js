@@ -65,7 +65,8 @@ export default {
 			//console.log(`${fakeUserID}\n${fakeHostName}`); // 打印fakeID
 
 			if (env.KEY) {
-				userID = await generateDynamicUUID(env.KEY);
+				const userIDs = await generateDynamicUUID(env.KEY);
+				userID = userIDs[0];
 			}
 
 			proxyIP = env.PROXYIP || proxyIP;
@@ -1478,5 +1479,5 @@ function generateDynamicUUID(key) {
 	// 生成一个 UUID
 	const currentUUIDPromise = generateUUID(key + passwdTime);
 	
-	return Promise.all(currentUUIDPromise);
+	return Promise.all([currentUUIDPromise]);
 }
