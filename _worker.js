@@ -23,6 +23,7 @@ if (!isValidUUID(userID)) {
 
 let parsedSocks5Address = {}; 
 let enableSocks = false;
+let effectiveTime = 7;//有效时间 单位:天
 
 // 虚假uuid和hostname，用于发送给配置生成服务
 let fakeUserID ;
