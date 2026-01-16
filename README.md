@@ -133,6 +133,7 @@ Telegram交流群：[@CMLiussss](https://t.me/CMLiussss)
 | 变量名 | 示例 | 必填 | 备注 | YT |
 |--------|---------|-|-----|-----|
 | UUID | 90cd4a77-141a-43c9-991b-08263cfe9c10 |√| Powershell -NoExit -Command "[guid]::NewGuid()"| [Video](https://www.youtube.com/watch?v=s91zjpw3-P8&t=72s) |
+| KEY | `token` |×| 动态UUID秘钥，使用变量`KEY`的时候，将不再启用变量`UUID`|  |
 | PROXYIP | proxyip.fxxk.dedyn.io |×| 备选作为访问CloudFlareCDN站点的代理节点(支持多ProxyIP, ProxyIP之间使用`,`或 换行 作间隔) | [Video](https://www.youtube.com/watch?v=s91zjpw3-P8&t=166s) |
 | SOCKS5  | user:password@127.0.0.1:1080 |×| 优先作为访问CloudFlareCDN站点的SOCKS5代理 | [Video](https://www.youtube.com/watch?v=s91zjpw3-P8&t=826s) |
 | ADD | icook.tw:2053#官方优选域名 |×| 本地优选TLS域名/优选IP(支持多元素之间`,`或 换行 作间隔) ||
